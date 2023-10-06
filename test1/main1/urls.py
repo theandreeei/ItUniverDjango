@@ -4,5 +4,11 @@ from . import views
 urlpatterns = [
     path('', views.index),
     path('pet', views.pet),
-    path('aboutme/', views.about)  # Зі / чомусь вибивало помилку 404, хоча pet робить і без /.
+    path('fullname', views.fullname),
+    path('place', views.place),
+    path('years_old', views.years_old),
+    path('education', views.education),
+    path('hobby', views.hobby),
+    path('else_about_me', views.else_about_me),
 ]
+
