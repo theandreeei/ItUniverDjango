@@ -1,9 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .db import students, favorite_films
 
 
 def index(request):
-    return HttpResponse('Hello, my name is Andrei')
+    hobby = 'boxing'
+    return render(request, 'main/index.html',
+                  {'name': 'Andrei', 'hobby': hobby, 'students': students})
+
+
+def films(request):
+    return render(request, 'films/index.html',
+                  {'films': favorite_films})
 
 
 def pet(request):

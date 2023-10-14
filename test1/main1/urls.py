@@ -10,5 +10,6 @@ urlpatterns = [
     path('education', views.education),
     path('hobby', views.hobby),
     path('else_about_me', views.else_about_me),
+    path('films', views.films)
 ]
 
