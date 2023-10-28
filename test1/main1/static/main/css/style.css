@@ -1,0 +1,24 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #7752FE;
+    list-style: none;
+}
+
+body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    width: 33.3%;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #5339B2;
+}
